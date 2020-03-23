@@ -37,7 +37,11 @@ module test;
         #1 shld = 1;
         #1 shld = 0;
 
-        #20 $finish;
+        data <= 8'b00101000;
+        #20 shld = 1;
+        #1 shld = 0;
+
+        #40 $finish;
 
     end
 
