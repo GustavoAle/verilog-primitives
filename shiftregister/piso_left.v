@@ -5,14 +5,14 @@
 
 module piso_left
 #(
-    parameter INPUT_WIDTH = 8,  // register size
-    parameter VALUE_PULL =  1'b0   // complementary bit value
+    parameter INPUT_WIDTH = 8,      // register size
+    parameter VALUE_PULL =  1'b0    // complementary bit value
 )
 (
-    input                       clk,
-    input [INPUT_WIDTH-1:0]     data,
+    input                       clk,        //input clock
+    input [INPUT_WIDTH-1:0]     data,       //parallel data in
     input                       shift_load, //0: shift, 1: load
-    output wire                 serial_out
+    output wire                 serial_out  //serial output
 );
 
     reg [INPUT_WIDTH-1:0]       internal_reg;
