@@ -21,7 +21,7 @@ module sipo_left
     always @(posedge clk, posedge reset) begin
         if(reset) begin
             shift_register <= {OUTPUT_WIDTH{1'b0}};
-            data <= shift_register;
+            data <= {OUTPUT_WIDTH{1'b0}};
         end
         else begin
             shift_register <= (shift_register << 1) | serial_in;
