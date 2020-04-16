@@ -8,7 +8,7 @@ part of more complex projects
 
 ---
 
-## Credits
+## Author
 
 * Author: Gustavo Ale
 * GitHub: https://github.com/GustavoAle
